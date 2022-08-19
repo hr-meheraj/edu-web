@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home';
+import CourseDetails from './pages/CourseDetails/CourseDetails';
+import Home from './pages/Home/Home';
 import Navbar from './shared/Navbar';
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       </header>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/course-details' element={<CourseDetails />} />
       </Routes>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 const Navbar = () => {
     return (
@@ -239,13 +240,13 @@ const Navbar = () => {
 								<ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
 									<li> <a className="dropdown-item" href="course-categories.html">Course Categories</a></li>
 									<li> <hr className="dropdown-divider"/></li>
-									<li> <a className="dropdown-item" href="course-grid.html">Course Grid Classic</a></li>
+									<li> <span className="dropdown-item"><Link to='/course-details'>Course Detail Classic</Link></span></li>
 									<li> <a className="dropdown-item" href="course-grid-2.html">Course Grid Minimal</a></li>
 									<li> <hr className="dropdown-divider"/></li>
 									<li> <a className="dropdown-item" href="course-list.html">Course List Classic</a></li>
 									<li> <a className="dropdown-item" href="course-list-2.html">Course List Minimal</a></li>
 									<li> <hr className="dropdown-divider"/></li>
-									<li> <a className="dropdown-item" href="course-detail.html">Course Detail Classic</a></li>
+									<li> <span className="dropdown-item"><Link to='/course-details'>Course Detail Classic</Link></span></li>
 									<li> <a className="dropdown-item" href="course-detail-min.html">Course Detail Minimal</a></li>
 									<li> <a className="dropdown-item" href="course-detail-adv.html">Course Detail Advance</a></li>
 									<li> <a className="dropdown-item" href="course-detail-module.html">Course Detail Module<span className="badge bg-success ms-2 smaller">New</span></a></li>
