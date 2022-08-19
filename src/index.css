@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+ */
+
+body{
+  max-width: 1180px !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mystyle{
+  background:url('https://eduport.webestica.com/assets/images/pattern/01.png') no-repeat center center;
+  background-size:cover;
+}
+
+.mystyle2{
+  background:url('https://eduport.webestica.com/assets/images/pattern/02.png') no-repeat center center;
+   background-size:cover;
+}
+
+#tns1 {
+  transform: translate3d(-66.6667%, 0px, 0px);
+   transition-duration: 0s;
+}
+
+.svg-pro{
+  enable-background: "new 0 0 554 544"
 }

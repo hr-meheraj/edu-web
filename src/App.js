@@ -1,10 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home';
+import Navbar from './shared/Navbar';
 function App() {
   return (
-    <div className="App">
-    
+    <div>
+      <header class="navbar-light navbar-sticky header-static">
+        <Navbar />
+      </header>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
     </div>
   );
 }
