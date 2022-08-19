@@ -1,0 +1,13 @@
+
+1. https://eduport.webestica.com/index.html
+2. https://eduport.webestica.com/course-detail.html
+3. https://eduport.webestica.com/course-detail-module.html
+4. https://eduport.webestica.com/course-video-player.html
+5.https://eduport.webestica.com/contact-us.html
+6. https://eduport.webestica.com/help-center.html
+7. https://eduport.webestica.com/sign-in.html
+8. https://eduport.webestica.com/sign-up.html
+9. https://eduport.webestica.com/error-404.html
+10. https://eduport.webestica.com/student-dashboard.html
+11. https://eduport.webestica.com/admin-dashboard.html
+12. https://eduport.webestica.com/docs/color-scheme.html
