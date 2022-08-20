@@ -25,3 +25,18 @@ body{
 .svg-pro{
   enable-background: "new 0 0 554 544"
 }
+
+.stylishvalue {
+  --value : 100%
+}
+
+
+.contact{
+  background-image:url('https://eduport.webestica.com/assets/images/element/map.svg'); 
+  background-position: center left; background-size: cover;
+}
+
+.dash{
+  background:url('https://eduport.webestica.com/assets/images/pattern/04.png') no-repeat center center; 
+  background-size:cover;
+}

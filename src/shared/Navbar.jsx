@@ -6,9 +6,10 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-xl">
 		<div className="container-fluid px-3 px-xl-5">
 			{/* <!-- Logo START --> */}
-			<a className="navbar-brand" href="index.html">
-				<img className="light-mode-item navbar-brand-item" src="https://eduport.webestica.com/assets/images/logo.svg" alt="logo"/>
-			</a>
+			
+			<span className="navbar-brand">
+			<Link to='/'><img className="light-mode-item navbar-brand-item" src="https://eduport.webestica.com/assets/images/logo.svg" alt="logo"/></Link>
+			</span>
 			{/* <!-- Logo END --> */}
 
 			{/* <!-- Responsive navbar toggler --> */}
@@ -247,7 +248,11 @@ const Navbar = () => {
 									<li> <a className="dropdown-item" href="course-list-2.html">Course List Minimal</a></li>
 									<li> <hr className="dropdown-divider"/></li>
 									<li> <span className="dropdown-item"><Link to='/course-details'>Course Detail Classic</Link></span></li>
-									<li> <a className="dropdown-item" href="course-detail-min.html">Course Detail Minimal</a></li>
+									<li> <span className="dropdown-item"><Link to='/course-details-module'>Course Detail Moduel</Link></span></li>
+									<li> <span className="dropdown-item"><Link to='/color-scheme'>Color Scheme</Link></span></li>
+									<li> <span className="dropdown-item"><Link to='/course-video-player'>Course Video Player</Link></span></li>
+									<li> <span className="dropdown-item"><Link to='/contact-us'>Contact Us</Link></span></li>
+									<li> <span className="dropdown-item"><Link to='/help-center'>Help Center</Link></span></li>
 									<li> <a className="dropdown-item" href="course-detail-adv.html">Course Detail Advance</a></li>
 									<li> <a className="dropdown-item" href="course-detail-module.html">Course Detail Module<span className="badge bg-success ms-2 smaller">New</span></a></li>
 									<li> <a className="dropdown-item" href="course-video-player.html">Course Full Screen Video</a></li>
@@ -259,7 +264,7 @@ const Navbar = () => {
 								<a className="dropdown-item dropdown-toggle" href="#">About</a>
 								<ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
 									<li> <a className="dropdown-item" href="about.html">About Us</a></li>
-									<li> <a className="dropdown-item" href="contact-us.html">Contact Us</a></li>
+									<li> <Link to='/contact-us'><span className="dropdown-item">Contact Us</span></Link></li>
 									<li> <a className="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
 									<li> <a className="dropdown-item" href="blog-masonry.html">Blog Masonry</a></li>
 									<li> <a className="dropdown-item" href="blog-detail.html">Blog Detail</a></li>
@@ -309,8 +314,8 @@ const Navbar = () => {
 							<li className="dropdown-submenu dropend">
 								<a className="dropdown-item dropdown-toggle" href="#">Authentication</a>
 								<ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a className="dropdown-item" href="sign-in.html">Sign In</a></li>
-									<li> <a className="dropdown-item" href="sign-up.html">Sign Up</a></li>
+									<li> <Link to='/sign-in'><span className="dropdown-item">Sign In</span></Link></li>
+									<li> <Link to='/sign-up'><span className="dropdown-item">Sign up </span></Link></li>
 									<li> <a className="dropdown-item" href="forgot-password.html">Forgot Password</a></li>
 								</ul>
 							</li>
@@ -357,7 +362,7 @@ const Navbar = () => {
 								<li className="dropdown-submenu dropend">
 								<a className="dropdown-item dropdown-toggle" href="#"><i className="fas fa-user-graduate fa-fw me-1"></i>Student</a>
 								<ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a className="dropdown-item" href="student-dashboard.html"><i className="bi bi-grid-fill fa-fw me-1"></i>Dashboard</a> </li>
+									<li> <Link to='/student-dashbaord'><span className="dropdown-item"><i className="bi bi-grid-fill fa-fw me-1"></i>Dashboard</span></Link> </li>
 									<li> <a className="dropdown-item" href="student-subscription.html"><i className="bi bi-card-checklist fa-fw me-1"></i>My Subscriptions</a> </li>
 									<li> <a className="dropdown-item" href="student-course-list.html"><i className="bi bi-basket-fill fa-fw me-1"></i>Courses</a> </li>
 									<li> <a className="dropdown-item" href="student-course-resume.html"><i className="far fa-fw fa-file-alt me-1"></i>Course Resume</a> </li>
@@ -367,7 +372,7 @@ const Navbar = () => {
 								</ul>
 							</li>
 							
-							<li> <a className="dropdown-item" href="admin-dashboard.html"><i className="fas fa-user-cog fa-fw me-1"></i>Admin</a> </li>
+							<li><Link to='/admin-dashboard'> <span className="dropdown-item"><i className="fas fa-user-cog fa-fw me-1"></i>Admin</span></Link> </li>
 							<li> <hr className="dropdown-divider" /></li>
 							<li> <a className="dropdown-item" href="instructor-edit-profile.html"><i className="fas fa-fw fa-edit me-1"></i>Edit Profile</a> </li>
 							<li> <a className="dropdown-item" href="instructor-setting.html"><i className="fas fa-fw fa-cog me-1"></i>Settings</a> </li>
